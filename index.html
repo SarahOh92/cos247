@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-        <div class="header_top">
-            <div class="inner">
+        <div class="header_top_wrap">
+            <div class="header_top">
                 <div class="left">
                     <h1><a href="index.html" class="ir_pm"><img src="images/logo.svg" alt="logo" class="logo"> cos247</a></h1>
                     <div class="search_box">
@@ -25,25 +25,23 @@
                 <ul class="login">
                     <li><a href="#">로그인</a></li>
                     <li><a href="#">회원가입</a></li>
-                    <li><a href="#">언어선택</a></li>
+                    <li><a href="#" class="ir_pm">언어선택</a></li>
                 </ul>
             </div>
         </div>
         <div class="gnbwrap">
-            <div class="inner">
-                <ul class="gnb">
-                    <li><a href="#">OEM/ODM</a></li>
-                    <li><a href="#">포장재</a></li>
-                    <li><a href="#">브랜드</a></li>
-                    <li><a href="#">협력업체</a></li>
-                    <li><a href="#">의뢰하기</a></li>
-                    <li><a href="#">정부지원사업</a></li>
-                </ul>
-                <ul class="gnb_right">
-                    <li><a href="#">247 Magazine</a></li>
-                    <li><a href="#">About COS247</a></li>
-                </ul>
-            </div>
+            <ul class="gnb">
+                <li><a href="#">OEM/ODM</a></li>
+                <li><a href="#">포장재</a></li>
+                <li><a href="#">브랜드</a></li>
+                <li><a href="#">협력업체</a></li>
+                <li><a href="#">의뢰하기</a></li>
+                <li><a href="#">정부지원사업</a></li>
+            </ul>
+            <ul class="gnb_right">
+                <li><a href="#">247 Magazine</a></li>
+                <li><a href="#">About COS247</a></li>
+            </ul>
         </div>
     </header>
     <section class="main_area">
@@ -325,22 +323,16 @@
                     <a href="#" class="whole_suggest">전체 의뢰보기</a>
                 </div>
                 <div class="project_right">
-                    <ul>
-                        <li class="packing">
-                            <a href="#">
-                                <span class="type">포장재 의뢰</span>
-                                <span class="title">sss</span>
-                                <span class="date right">D-1 (2022-05-28)</span>
-                            </a>
-                        </li>
-                        <li class="odm">
-                            <a href="#">
-                                <span class="type">ODM 의뢰</span>
-                                <span class="title">test</span>
-                                <span class="date">D-27 (2022-06-23)</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <button class="packing">
+                        <span class="type">포장재 의뢰</span>
+                        <span class="title">sss</span>
+                        <span class="date right">D-1 (2022-05-28)</span>
+                    </button>
+                    <button class="odm">
+                        <span class="type">ODM 의뢰</span>
+                        <span class="title">test</span>
+                        <span class="date">D-27 (2022-06-23)</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -547,33 +539,43 @@
     <div class="footer">
         <div class="inner">
             <div class="footer_top">
-                <div class="left">
-                    <div>이용약관</div>
-                    <div>마케팅 정보 수신 동의</div>
-                    <div>개인정보 취급방침</div>
-                    <div>광고 및 제휴문의</div>
-                    <div>자주 묻는 질문</div>
-                </div>
+                <ul class="left">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">마케팅 정보 수신 동의</a></li>
+                    <li><a href="#">개인정보 취급방침</a></li>
+                    <li><a href="#">광고 및 제휴문의</a></li>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                </ul>
                 <div class="sns right">
                     <div>
-                        <img src="images/facebook.png" alt="fackbook page">
-                        <span class="ir_pm">facebook</span>
+                        <a href="#">
+                            <img src="images/facebook.png" alt="fackbook page">
+                            <span class="ir_pm">facebook</span>
+                        </a>
                     </div>
                     <div>
-                        <img src="images/insta.png" alt="insta page">
-                        <span class="ir_pm">insta</span>
+                        <a href="#">
+                            <img src="images/insta.png" alt="insta page">
+                            <span class="ir_pm">insta</span>
+                        </a>
                     </div>
                     <div>
-                        <img src="images/blog.png" alt="blog page">
-                        <span class="ir_pm">blog</span>
+                        <a href="#">
+                            <img src="images/blog.png" alt="blog page">
+                            <span class="ir_pm">blog</span>
+                        </a>
                     </div>
                     <div>
-                        <img src="images/youtube.png" alt="youtube">
-                        <span class="ir_pm">youtube</span>
+                        <a href="#">
+                            <img src="images/youtube.png" alt="youtube">
+                            <span class="ir_pm">youtube</span>
+                        </a>
                     </div>
                     <div>
-                        <img src="images/kakao.png" alt="kakao page">
-                        <span class="ir_pm">kakako</span>
+                        <a href="#">
+                            <img src="images/kakao.png" alt="kakao page">
+                            <span class="ir_pm">kakako</span>
+                        </a>
                     </div>
                 </div>
             </div>
