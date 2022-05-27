@@ -339,12 +339,21 @@ header{
 .product_list {
     display: flex;
     margin-top: -38px;
-    margin-left: 25px;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .product_list .product{
-    width: 20%;
+    width: 19%;
     border: 1px solid #ddd;
     margin-right: 10px;
+    cursor: pointer;
+}
+.product_list .product:hover{
+    border: 1px solid #018ca5;
+}
+.product_list .product:nth-child(n+6):nth-child(-n+10){
+    margin-top: 10px;
 }
 .product_list .product .product_wrap{
     position: relative;
@@ -355,9 +364,14 @@ header{
     border-bottom: 1px solid #ddd;
     background: #fff;
 }
-.product .product_img img{
+.product_wrap .product_img img{
     max-width: 100%;
     max-height: 100%;
+    overflow: hidden;
+    transition: all .3s;
+}
+.product_wrap .product_img img:hover{
+    transform: scale(1.1);
 }
 .product_wrap .product_type{
     position: absolute;
@@ -391,4 +405,76 @@ header{
     margin-bottom: 15px;
     color: #292929;
     height: 22px;
+}
+.qna_area_wrap{
+    margin-top: 30px;
+}
+.qna_area_wrap h2{
+    padding: 30px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.qna_list_area{
+    display: flex;
+    justify-content: space-between;
+}
+.qna_list{
+    padding: 0 30px;
+    border-left: 1px solid #ddd;
+    flex: 1;
+}
+.qna_list .qna_cont{
+    font-weight: 300;
+    margin-top: 19px;
+    line-height: 23px;
+}
+.qna_list:nth-child(4) .qna_title{
+    line-height: 23px;
+}
+.fa-arrow-right-long{
+    font-size: 24px;
+}
+.footer{
+    background-color: #eee;
+    padding: 30px 0;
+}
+.footer_top{
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+.footer_top .left, .footer_top .right{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_top .left {
+    width: 50%;
+}
+.footer_top .right{
+    width: 10%;
+}
+.footer_top .right img{
+    height: 30px;
+}
+.footer_bottom {
+    position: relative;
+    display: flex;
+    color: #616161;
+    letter-spacing: .3px;
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #eee;
+    padding-top: 15px;
+}
+.footer_bottom .cy_company{
+    line-height: 20px;
+    padding: 0 15px 0 0;
+    font-weight: 400;
+}
+.footer_bottom .copyright{
+    position: absolute;
+    right: 0px;
+    bottom: 0;
 }
