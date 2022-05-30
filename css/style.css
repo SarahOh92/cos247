@@ -118,6 +118,15 @@ header{
 .alibaba .launch_inquiry:hover{
     background-color: #ed643a;
 }
+.sub_banner{
+    position: fixed;
+    top: 140px;
+    left: 50%;
+    margin-left: -740px;
+}
+.sub_banner .banner_wrap{
+    border: 1px solid #ddd;
+}
 .main_banner_wrap{
     margin: 15px auto;
     display: flex;
@@ -665,4 +674,31 @@ header{
     position: absolute;
     right: 0px;
     bottom: 0;
+}
+.top{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top: 16px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #323232;
+    transition: border-color .3s, color .3s;
+    opacity: 0;
+}
+.top a i{
+    display: inline-block;
+    font-size: 24px;
+    line-height: 24px;
+}
+#back-to-top.visible {
+    opacity: 1;
 }
