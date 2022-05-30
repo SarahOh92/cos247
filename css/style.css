@@ -363,23 +363,39 @@ header{
 .project_suggest{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .project_suggest .project_left{
-    flex: 0 0 436px;
+    flex: 0 0 500px;
     text-align: center;
 }
-.project_suggest h2{
+.project_suggest .project_left strong{
+    font-weight: 500;
+    font-size: 31px;
+    height: 100%;
+    line-height: 57px;
+    display: inline-block;
     color: #fff;
-    line-height: 35px;
 }
 .project_suggest .project_left a{
-    background-color: #fff;
-    color: #6b6b6b;
-    border-radius: 50px;
-    display: inline-block;
-    padding: 10px 50px;
-    margin-top: 10px;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    transition: .1s;
+    font-weight: 500;
+    padding: 12px 23px;
+    font-size: 14px;
+    border-radius: 20px;
+    display: block;
+    width: 50%;
+    padding-top: 10px;
+    margin: 10px auto;
 }
 .project_suggest .project_left a:hover{
     color: #1aa3bc;
@@ -391,6 +407,9 @@ header{
     -ms-flex: 1;
     flex: 1;
     padding: 0 50px;
+}
+.project_right {
+    flex: 1;
 }
 .request .request_wrap{
     display: -webkit-box;
@@ -447,9 +466,17 @@ header{
     height: 100px;
     margin: 10px 0;
 }
+.products_area{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
 .products_area .recommand_prd{
     background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/recomand.jpg) no-repeat;
     background-size: cover;
+    background-position: 50%;
     height: 130px;
 
 }
@@ -462,26 +489,28 @@ header{
     display: block;
 }
 .product_list {
-    display: flex;
-    margin-top: -38px;
-    margin-left: 10px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin-top: -70px;
+    padding: 15px 40px;
+}
+.product_list:after{
+    content: '';
+    display: block;
+    clear: both;
 }
 .product_list .product{
-    width: 19%;
-    border: 1px solid #ddd;
-    margin-right: 10px;
+    width: 20%;
+    padding: 8px;
     cursor: pointer;
-}
-.product_list .product:hover{
-    border: 1px solid #018ca5;
 }
 .product_list .product:nth-child(n+6):nth-child(-n+10){
     margin-top: 10px;
 }
 .product_list .product .product_wrap{
     position: relative;
+    border: 1px solid #ddd;
+}
+.product_list .product .product_wrap:hover{
+    border: 1px solid #018ca5;
 }
 .product_list .product .product_img{
     width: 100%;
@@ -532,27 +561,43 @@ header{
     height: 22px;
 }
 .qna_area_wrap{
-    margin-top: 30px;
+    margin-top: 20px;
+}
+.qna_area_wrap .qna_tit{
+    padding: 30px 0 0;
 }
 .qna_area_wrap h2{
-    padding: 30px 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
     font-size: 18px;
     font-weight: 500;
 }
 .qna_list_area{
     display: flex;
     justify-content: space-between;
+    padding: 30px 10px 0 12px;
 }
 .qna_list{
     padding: 0 30px;
     border-left: 1px solid #ddd;
     flex: 1;
 }
+.qna_list .qna_title{
+    padding: 40px 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
 .qna_list .qna_cont{
-    font-weight: 300;
-    margin-top: 19px;
-    line-height: 23px;
-    padding-bottom: 30px;
+    padding: 10px 0 50px;
+    line-height: 26px;
+    color: #585858;
+    font-size: 12px;
+}
+.qna_list .last_qna{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .qna_list:nth-child(4) .qna_title{
     line-height: 23px;
@@ -560,28 +605,42 @@ header{
 .fa-arrow-right-long{
     font-size: 24px;
 }
+.qna_list:nth-child(4) .more{
+    margin-left: auto;
+    font-size: 30px;
+    color: #585858;
+}
 .footer{
     background-color: #eee;
     padding: 30px 0;
 }
 .footer_top{
-    display: flex;
     height: 40px;
-    justify-content: space-between;
     border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    position: relative;
 }
-.footer_top .left, .footer_top .right{
-    display: flex;
-    justify-content: space-between;
+.footer_top .left{
+    position: absolute;
 }
-.footer_top .left {
-    width: 50%;
+.footer_top .left li{
+    display: inline-block;
+    padding-right: 35px;
+}
+.footer_top .left li a{
+    color: #111;
 }
 .footer_top .left li a:hover{
     color: #00a5bd;
 }
 .footer_top .right{
-    width: 10%;
+    position: absolute;
+    top: 0;
+    right: 60px;
+}
+.footer_top .right a{
+    display: inline-block;
+    color: #111;
 }
 .footer_top .right img{
     height: 30px;
