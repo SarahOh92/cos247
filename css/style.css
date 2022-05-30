@@ -1,6 +1,7 @@
 @charset "UTF-8";
 header{
     box-shadow: 0 0 5px rgb(53 53 53 / 10%);
+    border-bottom: 1px solid #ddd;
 }
 .header_top_wrap{
     border-bottom: 1px solid #ddd;
@@ -23,14 +24,23 @@ header{
 }
 .search_box{
     border-bottom: 1px solid #ddd;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 250px;
+    flex: 0 0 250px;
+}
+.search_box label{
+    line-height: 31px;
 }
 .search_box label input{
     border: none;
-    width: 210px;
+    width: 225px;
+    padding-left: 15px;
 }
 .header_top .login{
     display: flex;
     text-align: right;
+    font-size: 12.5px;
+    align-items: center;
 }
 .header_top .login li{
     padding-left: 10px;
@@ -56,15 +66,19 @@ header{
     justify-content: space-between;
     max-width: 1260px;
     margin: 0 auto;
-    padding: 14px 0;
 }
 .gnbwrap ul li a:hover{
     color: #1aa3bc;
 }
 .gnb{
-    display: flex;
+    display: inline-flex;
     width: 48%;
     justify-content: space-between;
+}
+.gnb li{
+    display: inline-block;
+    line-height: 33px;
+    padding: 0 15px;
 }
 .gnb_right{
     display: flex;
@@ -85,30 +99,36 @@ header{
     box-sizing: border-box;
     line-height: 20px;
 }
-.alibaba>p{
-    color: #f87c56;
-}
-.alibaba .alibaba_logo{
-    background: url(../images/alibaba_logo.svg) no-repeat;
+.alibaba .alibaba_logo img{
     width: 200px;
-    height: 32px;
     padding: 5px 5px 5px 20px;
+}
+.alibaba strong{
+    font-size: 13px;
+    font-weight: 500;
+    color: #f87c56;
 }
 .alibaba .launch_inquiry{
     text-align: right;
     color: #fff;
     background-color: #f87c56;
-    line-height: 42px;
-    padding: 0 22px;
+    line-height: 30px;
+    padding: 5px 30px;
+}
+.alibaba .launch_inquiry:hover{
+    background-color: #ed643a;
 }
 .main_banner_wrap{
-    margin-top: 15px;
+    margin: 15px auto;
     display: flex;
     justify-content: space-between;
+    grid-gap: 15px;
+    gap: 15px;
+    width: 1260px;
 }
 .main_banner{
     position: relative;
-    width: 60%;
+    width: 997px;
     overflow: hidden;
 }
 .main_banner .mainbn .main_txt{
@@ -147,10 +167,7 @@ header{
 }
 .sub_banner_area{
     display: flex;
-    margin-top: 10px;
-}
-.sub_banner_area .cos247make, .sub_banner_area .gcc{
-    margin-right: 10px;
+    margin-top: 15px;
 }
 .sub_banner_area .cos247make, .sub_banner_area .gcc, .sub_banner_area .ksrc {
     position: relative;
@@ -158,10 +175,16 @@ header{
     overflow: hidden;
     flex: 1;
 }
+.sub_banner_area .gcc{
+    margin: 0 13px;
+}
 .cos247make .img_area img, .gcc .img_area img, .ksrc .img_area img{
     object-fit: cover;
     width: 100%;
     cursor: pointer;
+}
+.ksrc .img_area img{
+    padding-top: 6px;
 }
 .sub_banner_area .cos247make .txt_area{
     position: absolute;
@@ -190,11 +213,12 @@ header{
     border: 1px solid #333;
 }
 .magazine_wrap{
-    width: 37%;
+    width: 345px;
     position: relative;
+    flex: 0 0 345px;
 }
 .magazine_wrap .magazine_top{
-    background: url(../images/magazine.jpg) no-repeat;
+    background: url(../images/magazine.jpg) 50% no-repeat;
     height: 330px;
     background-size: cover;
 }
@@ -203,23 +227,42 @@ header{
     top: 27px;
     left: 20px;
     color: #333;
-    width: 61%;
     line-height: 25px;
+}
+.magazine_wrap .magazine_txt h2{
+    margin: 5px 0 7px;
 }
 .magazine_wrap .magazine_txt a{
     color: #333;
 }
-.magazine_list li{
-    padding: 10px 0;
-    width: 90%;
-    border-bottom: 1px solid #ddd;
-    margin: 6px auto 0;
+.magazine_wrap .magazine_txt span{
+    line-height: 25px;
+    padding: 0 2px;
+    display: inline-block;
 }
-.magazine_list li:first-child{
+.magazine_list {
+    padding: 10px 0;
+}
+.magazine_list li{
+    padding: 0 15px;
+}
+.magazine_list li:hover{
+    background-color: rgba(234,235,236,.562);
+    cursor: pointer;
+}
+.magazine_list li .img_wrap{
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     border-top: 1px solid #ddd;
+    padding: 12px 0;
 }
 .magazine_list li:last-child{
     border: none;
+}
+.magazine_list .txt_con{
+    width: 230px;
 }
 .magazine_list .txt_con p{
     font-weight: 300;
@@ -237,13 +280,20 @@ header{
     color: #00a5bd;
     padding: 0px 0 5px;
 }
+.company_area {
+    margin: 20px auto;
+}
 .company_area .company_list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .company_area h3{
-    margin: 20px 10px;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0 10px 20px;
+    padding: 10px 0;
+    display: inline-block;
 }
 .company_list .company{
     width: 19%;
@@ -266,12 +316,13 @@ header{
 .company_list .company .company_img img{
     transition: all .5s ease-in-out;
     overflow: hidden;
+    display: block;
 }
 .company_list .company .company_img img:hover{
     transform: scale(1.1);
 }
 .company_img .logo {
-    transform: translate(-50%,-50%);
+    transform: translate(-38%,-50%);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -335,31 +386,58 @@ header{
     border-color: #bae3eb;
     background-color: #e8f6f8;
 }
-.project_suggest .project_right button{
-    background: #fff;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    width: 450px;
-    border: 1px solid #fff;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.project_right .request{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 0 50px;
 }
-.project_suggest .project_right button:hover{
+.request .request_wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 15px 0;
+    border: 1px solid #fff;
+    -webkit-transition: border .3s;
+    transition: border .3s;
+    cursor: pointer;
+}
+.project_right .request .request_wrap:hover{
     border: 1px solid #1aa3bc;
 }
-.project_right .title:hover{
+.request .request_wrap .request_type{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100px;
+    flex: 0 0 100px;
+    text-align: center;
     color: #1aa3bc;
 }
-.project_right .type{
-    color: #1aa3bc;
-    padding: 4px 15px 4px 10px;
+.request .request_wrap .request_title{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
-.project_right .date{
+.request_wrap .request_title strong{
+    display: block;
+    max-width: 400px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.project_right .request_title:hover{
+    color: #1aa3bc;
+}
+
+.request .request_wrap .request_date{
     -webkit-box-flex: 0;
     -ms-flex: 0 0 140px;
-    flex: auto;
+    flex: 0 0 140px;
     text-align: right;
     padding-right: 20px;
 }

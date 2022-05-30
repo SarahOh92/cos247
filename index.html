@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COS247 Portal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -47,8 +47,12 @@
     <section class="main_area">
         <div class="inner">
             <div class="alibaba">
-                <div><a href="#" class="alibaba_logo ir_pm">Alibaba.com</a></div>
-                <p>글로벌 B2B 마켓플레이스 알리바바닷컴의 공식 채널파트너 COS247을 통해 GGS 입점을 진행해보세요!</p>
+                <div>
+                    <span class="alibaba_logo">
+                        <img src="images/alibaba_logo.svg" alt="알리바바 로고">
+                    </span>
+                    <strong>글로벌 B2B 마켓플레이스 알리바바닷컴의 공식 채널파트너 COS247을 통해 GGS 입점을 진행해보세요!</strong>
+                </div>
                 <a href="#" class="launch_inquiry">입점 문의 하기</a>
             </div>
             <div class="main_banner_wrap">
@@ -94,43 +98,48 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="magazine_wrap">
                     <div class="magazine_top"></div>
                     <div class="magazine_txt">
                         <h2><a href="#">217 Magazine <i class="fa-solid fa-angle-right"></i></a></h2>
-                        <p>247 Magazine을 통해 화장품 관련 뉴스와 정보, 트렌드 그리고 COS247 이야기를 만나보세요.</p>
+                        <span>247 Magazine을 통해 화장품 관련 뉴스와 정보, <br> 트렌드 그리고 COS247 이야기를 만나보세요.</span>
                     </div>
                     <div class="magazine_list">
                         <ul>
                             <li class="flex">
-                                <div class="img_area">
-                                    <img src="images/magazine_list1.jpg" alt="test">
-                                </div>
-                                <div class="txt_area">
-                                    <div class="txt_tit">ㄴㅁㅇ</div>
-                                    <div class="txt_con">ㄴㅁㅇ</div>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <div class="img_area">
-                                    <img src="images/magazine_list2.jpg" alt="test">
-                                </div>
-                                <div class="txt_area">
-                                    <div class="txt_tit">test</div>
-                                    <div class="txt_con"><strong>애경산업 中 법인, 흑자전환 '눈앞'</strong>
-                                    <p>test</p></div>
+                                <div class="img_wrap">
+                                    <div class="img_area">
+                                        <img src="images/magazine_list1.jpg" alt="test">
+                                    </div>
+                                    <div class="txt_area">
+                                        <div class="txt_tit">ㄴㅁㅇ</div>
+                                        <div class="txt_con">ㄴㅁㅇ</div>
+                                    </div>
                                 </div>
                             </li>
                             <li class="flex">
-                                <div class="img_area">
-                                    <img src="images/magazine_list3.jpg" alt="test">
+                                <div class="img_wrap">
+                                    <div class="img_area">
+                                        <img src="images/magazine_list2.jpg" alt="test">
+                                    </div>
+                                    <div class="txt_area">
+                                        <div class="txt_tit">test</div>
+                                        <div class="txt_con"><strong>애경산업 中 법인, 흑자전환 '눈앞'</strong>
+                                        <p>test</p></div>
+                                    </div>
                                 </div>
-                                <div class="txt_area">
-                                    <div class="txt_tit">test</div>
-                                    <div class="txt_con">
-                                        <strong>test</strong>
-                                        <p>온라인쇼핑몰의 지난해 평균 수수료율</p>
+                            </li>
+                            <li class="flex">
+                                <div class="img_wrap">
+                                    <div class="img_area">
+                                        <img src="images/magazine_list3.jpg" alt="test">
+                                    </div>
+                                    <div class="txt_area">
+                                        <div class="txt_tit">test</div>
+                                        <div class="txt_con">
+                                            <strong>test</strong>
+                                            <p>온라인쇼핑몰의 지난해 평균 수수료율</p>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -323,16 +332,20 @@
                     <a href="#" class="whole_suggest">전체 의뢰보기</a>
                 </div>
                 <div class="project_right">
-                    <button class="packing">
-                        <span class="type">포장재 의뢰</span>
-                        <span class="title">sss</span>
-                        <span class="date right">D-1 (2022-05-28)</span>
-                    </button>
-                    <button class="odm">
-                        <span class="type">ODM 의뢰</span>
-                        <span class="title">test</span>
-                        <span class="date">D-27 (2022-06-23)</span>
-                    </button>
+                    <div class="request">
+                        <div class="request_wrap">
+                            <div class="request_type">ODM 의뢰</div>
+                            <div class="request_title"><strong>test</strong></div>
+                            <div class="request_date"><span>D-23 (2022-06-23)</span></div>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="request_wrap">
+                            <div class="request_type">ODM 의뢰</div>
+                            <div class="request_title"><strong>test</strong></div>
+                            <div class="request_date"><span>D-23 (2022-06-23)</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
