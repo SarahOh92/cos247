@@ -13,19 +13,21 @@
     <header>
         <div class="header_top_wrap">
             <div class="header_top">
-                <h1><a href="index.html" class="ir_pm"><img src="images/logo.svg" alt="logo" class="logo"> cos247</a></h1>
+                <h1><a href="index.html"><img src="images/logo.svg" alt="logo" class="logo"></a></h1>
                 <div class="search_box">
                     <label for="search">
-                        <input type="search" id="search" placeholder="기업과 제품을 검색 해보세요!">
+                        <input type="search" id="search" class="searchplace" placeholder="기업과 제품을 검색 해보세요!">
                         <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </label>
                 </div>
-                <div class="login">
-                    <a href="#">로그인</a>
-                    <a href="#">회원가입</a>
-                    <a href="#" class="global">
-                        <i class="global_icon"></i>
-                    </a>
+                <div class="login_area">
+                    <div class="login">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                        <a href="#" class="global">
+                            <i class="global_icon"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,15 +48,16 @@
     </header>
     <div class="container">
         <section class="main_area">
-            <div class="inner">
                 <div class="alibaba">
-                    <div>
-                        <span class="alibaba_logo">
-                            <img src="images/alibaba_logo.svg" alt="알리바바 로고">
-                        </span>
-                        <strong>글로벌 B2B 마켓플레이스 알리바바닷컴의 공식 채널파트너 COS247을 통해 GGS 입점을 진행해보세요!</strong>
+                    <div class="alibaba_wrap">
+                        <div>
+                            <span>
+                                <img src="https://www.cos-247.com/_nuxt/img/bfbcc17.svg" alt="알리바바 로고">
+                            </span>
+                            <strong>글로벌 B2B 마켓플레이스 알리바바닷컴의 공식 채널파트너 COS247을 통해 GGS 입점을 진행해보세요!</strong>
+                        </div>
+                        <a href="#" class="launch_inquiry">입점 문의 하기</a>
                     </div>
-                    <a href="#" class="launch_inquiry">입점 문의 하기</a>
                 </div>
                 <div class="sub_banner">
                     <div class="banner_wrap">
@@ -71,59 +74,79 @@
                                 COS247의 기업회원으로 무료 입점하세요
                                 <div class="sub_txt">기업 및 제품 홍보는 물론, 신규 판로 개척까지 한번에</div>
                                 <button>
-                                    <img src="images/cos247biz.svg" alt="cos247biz logo">
-                                    바로가기
+                                    <span>
+                                        <img src="images/cos247biz.svg" alt="cos247biz logo">
+                                        <strong>바로가기</strong>
+                                    </span>
                                 </button>
                             </div>
                             <div class="main_img"></div>
                         </div>
                         <div class="sub_banner_area">
-                            <div class="cos247make">
+                            <div class="cos247make banneritm">
                                 <div class="img_area">
                                     <img src="images/sub_banner1.jpg" alt="화장품 개발 관리 및 협업 솔루션">
                                 </div>
                                 <div class="txt_area">
                                     <p>화장품 개발 관리 및 협엽 솔루션</p>
-                                    <button>
+                                    <a href="#">
                                         <span>
                                             <img src="images/cos247make_logo.svg" alt="cos247make logo">
-                                            <i class="fa-solid fa-angle-right"></i>
+                                            <i class="fa-solid fa-chevron-right"></i>
                                         </span>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="gcc">
+                            <div class="banneritm">
                                 <div class="img_area">
                                     <img src="images/sub_banner2.png" alt="경기화장품협의회(GCC) 특별관">
                                 </div>
                                 <div class="txt_area">
-                                    <a href="#">경기화장품협의회(GCC) 특별관 <i class="fa-solid fa-angle-right"></i></a>
+                                    <a href="#" class="gcc">
+                                        <span>
+                                            경기화장품협의회 (GCC) 특별관
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="ksrc">
+                            <div class="ksrc banneritm">
                                 <div class="img_area">
-                                    <img src="images/sub_banner3.jpg" alt="한국피부임상연구센터">
+                                    <a href="#"><img src="images/sub_banner3.jpg" alt="한국피부임상연구센터"></a>
                                 </div>
-                                <div class="txt_area"></div>
                             </div>
                         </div>
                     </div>
                     <div class="magazine_wrap">
                         <div class="magazine_top"></div>
                         <div class="magazine_txt">
-                            <h2><a href="#">217 Magazine <i class="fa-solid fa-angle-right"></i></a></h2>
-                            <span>247 Magazine을 통해 화장품 관련 뉴스와 정보, <br> 트렌드 그리고 COS247 이야기를 만나보세요.</span>
+                            <h2><a href="#">247 Magazine <i class="fa-solid fa-chevron-right"></i></a></h2>
+                            <span>247 Magazine 을 통해 화장품 관련 뉴스와 정보, <br> 트렌드 그리고 COS247 이야기를 만나보세요.</span>
                         </div>
                         <div class="magazine_list">
                             <ul>
                                 <li class="flex">
                                     <div class="img_wrap">
                                         <div class="img_area">
-                                            <img src="images/magazine_list1.jpg" alt="test">
+                                            <img src="images/magazine_list3.jpg" alt="test">
                                         </div>
+                                        <div class="txt_area">
+                                            <div class="txt_tit">test</div>
+                                            <div class="txt_con">
+                                                <strong>test</strong>
+                                            </div>
+                                            <span>온라인쇼핑몰의 지난해 평균 수수료율</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="flex">
+                                    <div class="img_wrap">
+                                        <img src="images/magazine_list1.jpg" alt="test">
                                         <div class="txt_area">
                                             <div class="txt_tit">ㄴㅁㅇ</div>
                                             <div class="txt_con">ㄴㅁㅇ</div>
+                                            <span></span>
+                                            
                                         </div>
                                     </div>
                                 </li>
@@ -134,22 +157,8 @@
                                         </div>
                                         <div class="txt_area">
                                             <div class="txt_tit">test</div>
-                                            <div class="txt_con"><strong>애경산업 中 법인, 흑자전환 '눈앞'</strong>
-                                            <p>test</p></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="flex">
-                                    <div class="img_wrap">
-                                        <div class="img_area">
-                                            <img src="images/magazine_list3.jpg" alt="test">
-                                        </div>
-                                        <div class="txt_area">
-                                            <div class="txt_tit">test</div>
-                                            <div class="txt_con">
-                                                <strong>test</strong>
-                                                <p>온라인쇼핑몰의 지난해 평균 수수료율</p>
-                                            </div>
+                                            <div class="txt_con"><strong>애경산업 中 법인, 흑자전환 '눈앞'</strong></div>
+                                            <span>test</span>
                                         </div>
                                     </div>
                                 </li>
@@ -157,7 +166,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <section class="company_area">
             <div class="inner">

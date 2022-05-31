@@ -20,12 +20,13 @@ header{
     max-width: 1260px;
     margin: 0 auto;
 }
-.header_top .logo{
-    height: 26px;
-    width: 110px;
-    display: block;
-    margin: auto 0;
+.header_top h1{
     flex: 0 0 120px;
+}
+.header_top h1 a{
+    width: 110px;
+    font-size: 0;
+    display: block;
 }
 .search_box{
     -webkit-box-flex: 0;
@@ -38,28 +39,35 @@ header{
     border-bottom: 1px solid rgba(39,39,39,.27451);
 }
 .search_box label input{
-    border: none;
+    border: 0;
     width: 225px;
     padding-left: 15px;
-    font-size: 12px;
     line-height: 30px;
+    font-size: 12px;
     color: rgba(39,39,39,.27451);
+    font-weight: 300;
 }
-.header_top .login{
+.header_top .login_area{
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     text-align: right;
     font-size: 12.5px;
 }
-.header_top .login a{
-    padding-left: 10px;
+.header_top .login{
     line-height: 31px;
     vertical-align: middle;
 }
+.header_top .login a{
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 400;
+    color: #2c2c2c;
+}
 .header_top .login a:first-child::after{
     content: '|';
-    margin-left: 11px;
+    color: silver;
+    padding: 0 10px;
 }
 .global {
     margin-left: 20px;
@@ -79,17 +87,17 @@ header{
     display: flex;
     padding: 10px 0;
     white-space: nowrap;
-    justify-content: space-between;
+    font-size: 0;
     max-width: 1260px;
     margin: 0 auto;
+    text-align: left;
 }
 .gnbwrap ul li a:hover{
     color: #1aa3bc;
 }
 .gnb{
-    display: inline-flex;
-    width: 48%;
-    justify-content: space-between;
+    display: inline-block;
+    margin: auto 0;
 }
 .gnb li{
     display: inline-block;
@@ -100,28 +108,32 @@ header{
     display: inline-block;
     padding: 5px 10px;
     white-space: nowrap;
-    text-decoration: none;
     color: #111;
     font-size: 15px;
     font-weight: 500;
-    line-height: 22px;
     vertical-align: middle;
+    line-height: 22px;
 }
 .gnb_right{
-    display: flex;
-    text-align: right;
     -webkit-box-flex: 1;
-    align-items: center;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: right;
     -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
-.gnb_right li a{
+
+.gnb_right li{
     display: inline-block;
-    color: #111;
     padding: 5px 15px;
     line-height: 22px;
     font-weight: 500;
     font-size: 15px;
     vertical-align: middle;
+}
+.gnb_right li a{
+    color: #111;
 }
 .container{
     padding-top: 120px;
@@ -130,28 +142,33 @@ header{
 }
 .alibaba {
     margin-top: 20px;
-    display: flex;
+}
+.alibaba .alibaba_wrap {
     border: 1px solid #f87c56;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
-    align-items: center;
+    max-width: 1260px;
+    margin: 0 auto;
     box-sizing: border-box;
     line-height: 20px;
 }
-.alibaba .alibaba_logo img{
+.alibaba_wrap span>img{
     width: 200px;
     padding: 5px 5px 5px 20px;
 }
-.alibaba strong{
+.alibaba_wrap strong{
     font-size: 13px;
     font-weight: 500;
     color: #f87c56;
 }
-.alibaba .launch_inquiry{
-    text-align: right;
+.alibaba .alibaba_wrap a{
     color: #fff;
     background-color: #f87c56;
     line-height: 30px;
     padding: 5px 30px;
+    cursor: pointer;
 }
 .alibaba .launch_inquiry:hover{
     background-color: #ed643a;
@@ -177,6 +194,9 @@ header{
 .main_banner{
     flex: 0 0 900px;
 }
+.main_banner .mainbn {
+    position: relative;
+}
 .main_banner .mainbn .main_txt{
     position: absolute;
     color: #fff;
@@ -197,15 +217,35 @@ header{
     font-weight: 400;
     color: #dedede;
     line-height: 50px;
+    margin-bottom: -10px;
+    padding-bottom: 3px;
+    padding-left: 4px;
 }
 .main_banner .main_txt button{
-    background-color: transparent;
-    border: 1px solid #fff;
-    border-radius: 50px;
-    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
     cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    -webkit-appearance: none;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    -webkit-transition: .1s;
+    transition: .1s;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #fff;
+    border-radius: 30px;
+    background-color: transparent;
+    width: 180px;
     margin: 20px 0 0 6px;
-    padding: 15px;
 }
 .main_banner .main_txt button:hover{
     color: #fff;
@@ -213,82 +253,102 @@ header{
     border-color: #bae3eb;
 }
 .main_banner .main_txt button img{
-    width: 76px;
-    height: 13px;
+    width: 55%;
+}
+.main_banner .main_txt button span strong{
+    padding-top: 3px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 19px;
+    vertical-align: text-top;
+    font-size: 13px;
 }
 .sub_banner_area{
     display: flex;
     margin-top: 15px;
+    align-items: center
 }
-.sub_banner_area .cos247make, .sub_banner_area .gcc, .sub_banner_area .ksrc {
+.banneritm {
     position: relative;
     height: 155px;
     overflow: hidden;
     flex: 1;
+    border: 2px solid transparent;
 }
-.sub_banner_area .gcc{
+.sub_banner_area .banneritm:nth-child(2){
     margin: 0 13px;
 }
-.cos247make .img_area img, .gcc .img_area img, .ksrc .img_area img{
+.banneritm .img_area img{
     object-fit: cover;
     width: 100%;
-    cursor: pointer;
 }
-.ksrc .img_area img{
-    padding-top: 6px;
-}
-.sub_banner_area .cos247make .txt_area{
+.banneritm .txt_area{
     position: absolute;
     top: 10px;
     left: 15px;
     color: #272727;
 }
-.cos247make .txt_area p{
+.banneritm .txt_area p{
     position: absolute;
     top: 10px;
     left: 2px;
-    color: #272727;
     font-weight: 500;
+    display: inline-block;
 }
-.cos247make .txt_area button{
+.banneritm .txt_area a{
+    display: inline-block;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-transition: .1s;
+    transition: .1s;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 4px;
     padding-top: 35px;
     top: 13px;
-    background: transparent;
-    border-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
-    cursor: pointer;
 }
-.cos247make .txt_area button span{
+.banneritm .txt_area a.gcc{
+    padding-top: 13px;
+}
+.banneritm .txt_area a span{
     color: #272727;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-align: center;
     grid-gap: 5px;
-    gap: 5px;
+    gap: 12px;
 }
-.cos247make .txt_area button span img{
+.banneritm .txt_area a.gcc span{
+    color: #fff;
+    display: flex;
+}
+.banneritm .txt_area img{
     width: 40%;
 }
-.sub_banner_area .cos247make .txt_area .flex i{
-    margin-left: 5px;
-}
-.sub_banner_area .cos247make .cos247make_logo{
-    background: url(../images/cos247make_logo.svg) no-repeat;
-    width: 137px;
-    height: 19px;
-}
-.gcc .txt_area a{
-    position: absolute;
+.banneritm .txt_area span{
     color: #fff;
-    top: 25px;
-    left: 10px;
+    top: 10px;
+    left: 2px;
+    display: flex;
 }
-.sub_banner_area .ksrc{
-    border: 1px solid #333;
+banneritm .txt_area button span i{
+    margin-left: 5px;
+    line-height: 1;
+    font-style: normal;
+    font-weight: 400;
+    vertical-align: baseline;
+    display: inline-block;
+}
+.txt_area.gcc button span{
+    color: #fff;
+}
+.banneritm:nth-child(3) .img_area{
+    border: 1px solid #272a2a;
+    height: 149px;
+}
+.banneritm:nth-child(3) .img_area img{
+    padding-top: 6px;
+    object-fit: cover;
 }
 .magazine_wrap{
     width: 345px;
@@ -302,16 +362,18 @@ header{
 }
 .magazine_wrap .magazine_txt{
     position: absolute;
-    top: 27px;
-    left: 20px;
-    color: #333;
-    line-height: 25px;
+    top: 10px;
+    left: 10px;
+    padding: 15px;
 }
 .magazine_wrap .magazine_txt h2{
     margin: 5px 0 7px;
 }
-.magazine_wrap .magazine_txt a{
-    color: #333;
+.magazine_wrap .magazine_txt h2 a{
+    color: #000;
+    padding: 0;
+    line-height: 1;
+    cursor: pointer;
 }
 .magazine_wrap .magazine_txt span{
     line-height: 25px;
@@ -339,24 +401,33 @@ header{
 .magazine_list li:last-child{
     border: none;
 }
-.magazine_list .txt_con{
-    width: 230px;
-}
-.magazine_list .txt_con p{
-    font-weight: 300;
-    padding-top: 5px;
-}
-.magazine_list li .img_area img{
+.magazine_list li img{
     width: 70px;
     height: 70px;
     object-fit: cover;
 }
 .magazine_list li .txt_area{
-    padding: 6px 10px 0;
+    padding: 0 15px;
 }
 .txt_area .txt_tit{
+    margin: 0;
+    padding: 2px 0;
     color: #00a5bd;
-    padding: 0px 0 5px;
+    font-weight: 500;
+    font-size: 0.83em;
+}
+.txt_area .txt_con{
+    margin: 0;
+    padding: 5px 0 0;
+    color: #272727;
+    font-weight: 600;
+    width: 230px;
+}
+.txt_area span{
+    width: 225px;
+    display: inline-block;
+    color: #535353;
+    font-size: 13px;
 }
 .company_area {
     margin: 20px auto;
