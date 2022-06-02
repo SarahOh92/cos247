@@ -303,7 +303,7 @@ header{
     font-weight: 500;
     font-size: 14px;
     border-radius: 4px;
-    padding-top: 35px;
+    padding-top: 36px;
     top: 13px;
 }
 .banneritm .txt_area a.gcc{
@@ -345,7 +345,7 @@ banneritm .txt_area button span i{
 }
 .banneritm:nth-child(3) .img_area{
     border: 1px solid #272a2a;
-    height: 149px;
+    height: 150px;
 }
 .banneritm:nth-child(3) .img_area img{
     padding-top: 6px;
@@ -412,16 +412,15 @@ banneritm .txt_area button span i{
 }
 .txt_area .txt_tit{
     margin: 0;
-    padding: 2px 0;
+    padding: 0px 0 2px;
     color: #00a5bd;
     font-weight: 500;
-    font-size: 0.83em;
 }
 .txt_area .txt_con{
     margin: 0;
     padding: 5px 0 0;
     color: #272727;
-    font-weight: 500;
+    font-weight: 600;
     width: 230px;
 }
 .txt_area span{
@@ -447,9 +446,12 @@ banneritm .txt_area button span i{
 .company_area h3 span{
     font-size: 22px;
     padding-top: 10px;
-    margin: 10px 0;
+    margin: 9px 0;
     display: inline-block;
     font-weight: 600;
+}
+.company_list {
+    padding-bottom: 25px;
 }
 .company_list .company{
     width: 20%;
@@ -470,11 +472,14 @@ banneritm .txt_area button span i{
     overflow: hidden;
     cursor: pointer;
     aspect-ratio: 1/1;
+    justify-content: center;
 }
 .company_list .company .company_img img{
     transition: all .5s ease-in-out;
     overflow: hidden;
     display: block;
+    max-width: 100%;
+    max-height: 100%;
 }
 .company_list .company:hover .company_img img{
     transform: scale(1.1);
@@ -505,34 +510,36 @@ banneritm .txt_area button span i{
     padding: 10px 17px;
     display: inline-block;
 }
-.company_list .company_wrap .company_info{
-    padding: 15px;
-    text-align: center;
-    line-height: 21px;
-}
-.company_wrap .company_inf0 .txt_title, .company_wrap .company_info .txt_cont{
+.company_info .txt_title, .company_info .txt_cont{
     display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: center;
 }
-.company_wrap .company_info .txt_title{
+.company_info .txt_title{
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 7px;
     padding: 0 20px;
+    margin-top: 15px;
 }
 .company_wrap .company_info .txt_cont{
     font-size: 11px;
-    padding: 0 14px 6px;
+    padding: 0 25px 6px;
     color: #292929;
     height: 22px;
+    margin-bottom: 15px;
+}
+.rightnopadding {
+    width: 1260px;
+    margin: 20px auto;
 }
 .project_suggest_area{
     background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/project_suggest.jpg) no-repeat;
     background-size: cover;
     padding: 50px 0;
-    margin: 50px 0 30px;
+    margin: 0 0 30px;
 }
 .project_suggest{
     display: flex;
@@ -634,11 +641,16 @@ banneritm .txt_area button span i{
     text-align: right;
     padding-right: 20px;
 }
+.sub_inner {
+    width: 1260px;
+    margin: 20px auto;
+}
 .esplastic{
     background: url(../images/eunsungplastic.png) no-repeat;
     background-size: cover;
     height: 100px;
     margin: 10px 0;
+    cursor: pointer;
 }
 .products_area{
     display: flex;
@@ -705,10 +717,11 @@ banneritm .txt_area button span i{
     position: absolute;
     top: 0px;
     left: 0px;
-    background: rgba(255,255,255,.3);
+    background: rgba(255,255,255,.6);
     display: inline-block;
     padding: 10px 17px;
     font-size: 12px;
+    color: #6b6b6b;
 }
 .product_wrap .product_info{
     text-align: center;
@@ -741,12 +754,13 @@ banneritm .txt_area button span i{
 .qna_area_wrap .qna_tit{
     padding: 30px 0 0;
 }
-.qna_area_wrap h2{
+.qna_tit strong{
     font-size: 22px;
     font-weight: 600;
-    margin: 10px 0px 10px 20px;
+    margin: 9px 0px 9px 20px;
     padding-top: 10px;
     display: inline-block;
+    color: #000;
 }
 .qna_list_area{
     display: flex;
@@ -775,25 +789,31 @@ banneritm .txt_area button span i{
     justify-content: space-between;
 }
 .qna_list:nth-child(4) .qna_title{
-    line-height: 23px;
+    line-height: 24px;
 }
 .fa-arrow-right-long{
     font-size: 24px;
 }
 .qna_list:nth-child(4) .more{
-    margin-left: auto;
-    font-size: 30px;
+    margin-left: 31px;
+    font-size: 20px;
     color: #585858;
+}
+.qna_list:nth-child(4) .more i:hover{
+    color: #00a5bd;
 }
 .footer{
     background-color: #eee;
     padding: 30px 0;
 }
+.footer_wrap{
+    position: relative;
+}
 .footer_top{
-    height: 40px;
-    border-bottom: 1px solid #ddd;
+    height: 41px;
     font-size: 12px;
     position: relative;
+    border-bottom: 1px solid #ddd;
 }
 .footer_top .left{
     position: absolute;
@@ -804,6 +824,7 @@ banneritm .txt_area button span i{
 }
 .footer_top .left li a{
     color: #111;
+    display: inline-block;
 }
 .footer_top .left li a:hover{
     color: #00a5bd;
@@ -833,19 +854,20 @@ banneritm .txt_area button span i{
 }
 .footer_bottom .cy_company{
     line-height: 20px;
-    padding: 0 17px 0 0;
+    padding: 0 18px 0 0;
     font-weight: 400;
 }
-.footer_bottom .copyright{
+.copyright{
     position: absolute;
     right: 0px;
     bottom: 0;
+    
+    float: right;
 }
-.footer_bottom .copyright{
+.copyright p{
     font-size: 13px;
     color: #707070;
     font-weight: 300;
-    letter-spacing: .1px;
 }
 .top{
     position: fixed;
