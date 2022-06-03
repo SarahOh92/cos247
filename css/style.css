@@ -134,6 +134,29 @@ header{
 .gnb_right li a{
     color: #111;
 }
+.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle .ui-dialog-title{
+    display: none;
+}
+.ui-dialog-content.ui-widget-content img{
+    z-index: 11;
+    cursor: pointer;
+}
+.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle .ui-button{
+    width: 510px;
+    color: #909399;
+    background: #f4f4f5;
+    border-color: #d3d4d6;
+    padding: 17px;
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+    top: 510px;
+}
+.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle .ui-button:hover{
+    background: #909399;
+    border-color: #909399;
+    color: #fff;
+}
 .container{
     padding-top: 120px;
     -webkit-transition: padding .3s;
@@ -422,12 +445,18 @@ banneritm .txt_area button span i{
     color: #272727;
     font-weight: 600;
     width: 230px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .txt_area span{
     width: 225px;
     display: inline-block;
     color: #535353;
     font-size: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .company_area {
     margin: 20px auto;
@@ -588,6 +617,9 @@ banneritm .txt_area button span i{
     -ms-flex: 1;
     flex: 1;
     padding: 0 50px;
+}
+.project_right .request:nth-child(1) .request_wrap{
+    margin-top: 0;
 }
 .project_right {
     flex: 1;

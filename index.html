@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable{
+            width: 510px !important;
+            top: -3503.91px !important;
+            z-index: 20;
+            box-shadow: 0 0 16px rgba(17, 17, 26, 0.3);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -44,6 +52,9 @@
                 <li><a href="#">247 Magazine</a></li>
                 <li><a href="#">About COS247</a></li>
             </ul>
+        </div>
+        <div id="dialog" title="Basic dialog">
+            <img src="images/popup.png" alt="MAKE 베타 서비스 오픈!">
         </div>
     </header>
     <div class="container">
@@ -128,14 +139,14 @@
                                 <li class="flex">
                                     <div class="img_wrap">
                                         <div class="img_area">
-                                            <img src="https://cos247.blob.core.windows.net/portal/PT010-2022-05-27,10:34:49-16405735597237459-2%20(1).jpg" alt="test">
+                                            <img src="images/magazine2.jpg" alt="test">
                                         </div>
                                         <div class="txt_area">
-                                            <h5 class="txt_tit">test</h5>
+                                            <h5 class="txt_tit">news 1</h5>
                                             <div class="txt_con">
-                                                test입니다
+                                                식약처, 탈모 치료,예방 제품 온라인 '불법행위' 257건 적발
                                             </div>
-                                            <span>test</span>
+                                            <span>식약처, 탈모 치료·예방 제품 온라인 '불법행위' 257건 적발</span>
                                         </div>
                                     </div>
                                 </li>
@@ -143,9 +154,9 @@
                                     <div class="img_wrap">
                                         <img src="images/magazine_list1.jpg" alt="test">
                                         <div class="txt_area">
-                                            <h5 class="txt_tit">ㄴㅁㅇ</h5>
-                                            <div class="txt_con">ㄴㅁ</div>
-                                            <span></span>
+                                            <h5 class="txt_tit">매일경제</h5>
+                                            <div class="txt_con">기대 컸지만...K제약 화장품 사업 신통치 않네</div>
+                                            <span>대부분 매출 수억~수십업 그쳐 인지도, 유통역량 부족해 고전</span>
                                             
                                         </div>
                                     </div>
@@ -156,9 +167,9 @@
                                             <img src="images/magazine_list2.jpg" alt="test">
                                         </div>
                                         <div class="txt_area">
-                                            <h5 class="txt_tit">test</h5>
-                                            <div class="txt_con">애경산업 中 법인, 흑자전환 '눈앞'</div>
-                                            <span>test</span>
+                                            <h5 class="txt_tit">조선일보</h5>
+                                            <div class="txt_con">비건부터 친환경 제품까지 가치소비 내세우는 뷰티, 패션업계</div>
+                                            <span></span>
                                         </div>
                                     </div>
                                 </li>
@@ -357,15 +368,36 @@
                         <div class="request">
                             <div class="request_wrap">
                                 <div class="request_type">ODM 의뢰</div>
-                                <div class="request_title"><strong>test</strong></div>
-                                <div class="request_date"><span>D-23 (2022-06-23)</span></div>
+                                <div class="request_title"><strong>[미국] 타투펜(화장품)</strong></div>
+                                <div class="request_date"><span>D-6 (2022-06-10)</span></div>
                             </div>
                         </div>
                         <div class="request">
                             <div class="request_wrap">
-                                <div class="request_type">ODM 의뢰</div>
-                                <div class="request_title"><strong>test</strong></div>
-                                <div class="request_date"><span>D-23 (2022-06-23)</span></div>
+                                <div class="request_type">기타의뢰</div>
+                                <div class="request_title"><strong>[태국] 저렴한 샴푸,린스,등 욕실제품 찾습니다(완제품 보유한 제조사)</strong></div>
+                                <div class="request_date"><span>D-8 (2022-06-12)</span></div>
+                            </div>
+                        </div>
+                        <div class="request">
+                            <div class="request_wrap">
+                                <div class="request_type">기타의뢰</div>
+                                <div class="request_title"><strong>[태국] 헤어샵에 들어가는 모든제품 찾습니다.</strong></div>
+                                <div class="request_date"><span>D-8 (2022-06-12)</span></div>
+                            </div>
+                        </div>
+                        <div class="request">
+                            <div class="request_wrap">
+                                <div class="request_type">OEM 의뢰</div>
+                                <div class="request_title"><strong>[중국] 화장품 원료(증백제 기술) 수출가능한 업체 찾습니다.</strong></div>
+                                <div class="request_date"><span>D-13 (2022-06-17)</span></div>
+                            </div>
+                        </div>
+                        <div class="request">
+                            <div class="request_wrap">
+                                <div class="request_type">기타의뢰</div>
+                                <div class="request_title"><strong>[인도네시아] 색조화장품, 스킨케어 공급사</strong></div>
+                                <div class="request_date"><span>D-13 (2022-06-17)</span></div>
                             </div>
                         </div>
                     </div>
@@ -568,7 +600,7 @@
                     </div>
                     <div class="qna_list">
                         <div class="last_qna">
-                            <p class="qna_title">지주하는 질문 <br> 더 보러 가기</p>
+                            <p class="qna_title">자주하는 질문 <br> 더 보러 가기</p>
                             <div><a href="#" class="more"><span class="ir_pm">더보기</span><i class="fa-solid fa-arrow-right-long"></i></a></div>
                         </div>
                     </div>
@@ -626,8 +658,15 @@
             </div>
         </div>
     </div>
+    
     <a href="index.html" class="top" id="back-to-top"><i class="fa-solid fa-arrow-up-long"></i></a>
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="js/index.js"></script>
+    <script>
+        $( function() {
+          $( "#dialog" ).dialog();
+        } );
+        </script>
 </body>
 </html>
