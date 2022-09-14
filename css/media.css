@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@media screen and (max-width:1200px){
+    .header.mobile{display:block;position: fixed;z-index: 10;background-color: #fff;top: 0;left: 0;width: 100%;box-shadow: 0 0 4px rgb(53 53 53 / 10%);}
+    .header_top{padding: 15px;display: flex;max-width: 1200px;}
+    .header_top h1{flex: 1;display: flex;justify-content: center;}
+    .header_top .ham{display:flex;}
+    .header_top .login_area{display: inline-block;font-size: unset;text-align: unset;}
+    .header_top .login a:first-child::after{display: none;}
+}
+@media screen and (max-width:768px){
+    
+}

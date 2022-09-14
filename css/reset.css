@@ -60,7 +60,7 @@ input[type="search"]{
     box-sizing: border-box;
 }
 button, input, pre, select, textarea {
-    font-family: Noto Sans KR,sans-serif;
+    font-family: 'Noto Sans KR',sans-serif;
     font-size: 14px;
     outline: none;
 }
@@ -92,7 +92,4 @@ button, input, pre, select, textarea {
     font-size: 0;
     line-height: 0;
     text-indent: -99999px;
-}
-.flex{
-    display: flex;
 }

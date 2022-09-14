@@ -1,7 +1,9 @@
 @charset "UTF-8";
-header{box-shadow: 0 0 5px rgb(53 53 53 / 10%);border-bottom: 1px solid #ddd;position: fixed;z-index: 10;background-color: #fff;top: 0;left: 0;width: 100%;}
+.header{box-shadow: 0 0 5px rgb(53 53 53 / 10%);border-bottom: 1px solid #ddd;position: fixed;z-index: 10;background-color: #fff;top: 0;left: 0;width: 100%;}
 .header_top_wrap{border-bottom: 1px solid #ddd;}
 .header_top{display: flex;padding: 15px 0;align-items: center;justify-content: space-between;max-width: 1260px;margin: 0 auto;}
+.header_top .ham span{height: 2px;background: #777;transition: .25s ease-in-out;width: 18px;display: block;}
+.header_top .ham .icon_menu{width: 30px;height: 30px;text-align: center;vertical-align: middle;padding: 5px;box-sizing: borderbox;display: flex;flex-direction: column;justify-content: space-evenly;}
 .header_top h1{flex: 0 0 120px;}
 .header_top h1 a{width: 110px;font-size: 0;display: block;}
 
@@ -25,6 +27,8 @@ header{box-shadow: 0 0 5px rgb(53 53 53 / 10%);border-bottom: 1px solid #ddd;pos
 .gnb_right{-webkit-box-flex: 1;-ms-flex: 1;flex: 1;text-align: right;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
 .gnb_right li{display: inline-block;padding: 5px 15px;line-height: 22px;font-weight: 500;font-size: 15px;vertical-align: middle;}
 .gnb_right li a{color: #111;}
+.header.mobile{display: none;}
+
 
 .container{padding-top: 120px;transition: padding .3s;}
 
@@ -34,9 +38,6 @@ header{box-shadow: 0 0 5px rgb(53 53 53 / 10%);border-bottom: 1px solid #ddd;pos
 .alibaba_wrap strong{font-size: 13px;font-weight: 500;color: #f87c56;}
 .alibaba .alibaba_wrap a{color: #fff;background-color: #f87c56;line-height: 30px;padding: 5px 30px;cursor: pointer;}
 .alibaba .launch_inquiry:hover{background-color: #ed643a;}
-
-.sub_banner{position: fixed;top: 140px;left: 50%;margin-left: -740px;}
-.sub_banner .banner_wrap{border: 1px solid #ddd;}
 
 .main_banner_wrap{margin: 15px auto;display: flex;justify-content: space-between;grid-gap: 15px;gap: 15px;width: 1260px;position: relative;}
 .main_banner{flex: 0 0 900px;}
@@ -87,13 +88,12 @@ header{box-shadow: 0 0 5px rgb(53 53 53 / 10%);border-bottom: 1px solid #ddd;pos
 .txt_area span{width: 225px;display: inline-block;color: #535353;font-size: 13px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 
 .company_area { margin: 20px auto;}
-.company_area .company_list:after{content: '';display: block;clear: both;}
 .company_area h3{margin-left: 20px;font-size: 18px;font-weight: 500;padding-top: 30px;}
 .company_area h3 span{font-size: 22px;padding-top: 10px;margin: 9px 0;display: inline-block;font-weight: 600;}
 
-.company_list {padding-bottom: 25px;}
+.company_list {padding-bottom: 25px;display: flex;flex-wrap: wrap;}
 .company_list .company{width: 20%;padding: 8px;}
-.company_list .company .company_wrap{border: 1px solid #dedede;position: relative;}
+.company_list .company .company_wrap{border: 1px solid #dedede;position: relative;display: flex;flex-direction: column;}
 .company_list .company_wrap:hover{border: 1px solid #018ca5;}
 .company_list .company .company_img{width: 100%;position: relative;border-bottom: 1px solid #dedede;overflow: hidden;cursor: pointer;aspect-ratio: 1/1;justify-content: center;}
 .company_list .company .company_img img{transition: all .5s ease-in-out;overflow: hidden;display: block;max-width: 100%;max-height: 100%;}
@@ -131,9 +131,8 @@ header{box-shadow: 0 0 5px rgb(53 53 53 / 10%);border-bottom: 1px solid #ddd;pos
 .products_area{display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
 .products_area .recommand_prd{background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/recomand.jpg) no-repeat;background-size: cover;background-position: 50%;height: 130px;}
 .products_area .recommand_prd strong{color: #fff;padding: 20px;margin: 5px 0 0 15px;font-weight: 500;font-size: 22px;display: block;}
-.product_list {margin-top: -70px;padding: 15px 40px;}
-.product_list:after{content: '';display: block;clear: both;}
-.product_list .product{width: 20%;padding: 8px;cursor: pointer;}
+.product_list {margin-top: -70px;padding: 15px 40px;display: flex;flex-wrap: wrap;}
+.product_list .product{width: 20%;padding: 8px;display: flex;flex-direction: column;}
 .product_list .product:nth-child(n+6):nth-child(-n+10){margin-top: 10px;}
 .product_list .product .product_wrap{position: relative;border: 1px solid #ddd;}
 .product_list .product .product_wrap:hover{border: 1px solid #018ca5;}
