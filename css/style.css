@@ -69,6 +69,7 @@
 .banneritm:nth-child(3) .img_area img{padding-top: 6px;object-fit: cover;}
 
 .magazine_wrap{width: 345px;position: relative;flex: 0 0 345px;}
+.magazine_wrap.mobile{display: none;}
 .magazine_wrap .magazine_top{background: url(../images/magazine.jpg) 50% no-repeat;height: 330px;background-size: cover;}
 .magazine_wrap .magazine_txt{position: absolute;top: 10px;left: 10px;padding: 15px;}
 .magazine_wrap .magazine_txt h2{margin: 5px 0 7px;}
