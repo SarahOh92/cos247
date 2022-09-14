@@ -6,6 +6,17 @@
     .header_top .ham{display:flex;}
     .header_top .login_area{display: inline-block;font-size: unset;text-align: unset;}
     .header_top .login a:first-child::after{display: none;}
+    .header_top .login a{display: inline-block;width: 30px;height: 30px;text-align: center;margin-left: 5px;vertical-align: middle;box-sizing: border-box;}
+
+    .gnb_right{display: none;}
+
+    .container{width: 100%;max-width: 1200px;}
+    .alibaba{width: 88%;}
+    .alibaba .alibaba_wrap{flex-direction: column;margin: 0 15px;}
+    .alibaba_logo_area{display: flex;flex-direction: column;align-items: center;}
+
+    .main_banner_wrap{flex-direction: column;}
+    .sub_banner_area{flex-direction: column;}
 }
 @media screen and (max-width:768px){
     
